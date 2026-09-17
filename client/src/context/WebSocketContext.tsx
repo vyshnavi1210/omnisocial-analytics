@@ -17,7 +17,7 @@ export const WebSocketProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   const wsRef = useRef<WebSocket | null>(null);
 
   useEffect(() => {
-    let reconnectTimeout: NodeJS.Timeout;
+    let reconnectTimeout: ReturnType<typeof setTimeout>;
 
     const connect = () => {
       const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
