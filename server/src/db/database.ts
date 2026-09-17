@@ -12,7 +12,7 @@ import {
   AudienceDemographics
 } from '../types/index.js';
 
-const DATA_DIR = path.resolve(process.cwd(), '.data');
+const DATA_DIR = path.join(require('os').tmpdir(), 'omnisocial-data');
 const DB_FILE = path.join(DATA_DIR, 'omnisocial.sqlite');
 
 class SQLiteDatabase {
