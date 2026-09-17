@@ -12,7 +12,3 @@ services:
         value: 10000
       - key: JWT_SECRET
         generateValue: true
-    disk:
-      name: omnisocial-data
-      mountPath: /opt/render/project/src/.data
-      sizeGB: 1
