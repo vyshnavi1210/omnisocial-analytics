@@ -10,7 +10,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "react-jsx",`n    "types": ["react", "react-dom", "vite/client"],
     "strict": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
